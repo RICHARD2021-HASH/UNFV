@@ -12,7 +12,7 @@ on:
 
 # Inicio del trabajo
 jobs:
-  build:
+  construccion:
     # implementacion sobre Ubuntu
     runs-on: ubuntu-latest
     # pasos
