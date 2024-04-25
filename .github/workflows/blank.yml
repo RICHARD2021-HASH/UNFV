@@ -24,6 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Instalar Python
+        uses: actions/setup-python@v2
+        with:
+        python-version: '3.x'  # Especifica la versión de Python que deseas usar
+
+      - name: Ejecutar script Python
+        run: python test_unitario.py  # test de programa1.py
+
+
+
+
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
