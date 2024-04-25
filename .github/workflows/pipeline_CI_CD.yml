@@ -32,7 +32,7 @@ jobs:
 
       # Copiar el archivo programa1.py al directorio de artefactos
       - name: Copiar programa1.py al directorio de artefactos
-        run: cp programa1.py $GITHUB_WORKSPACE/programa1.py
+        run: cp .github/workflows/programa1.py $GITHUB_WORKSPACE/programa1.py
 
       # Guardar el archivo programa1.py como un artefacto con nombre progArtefacto
       - name: Guardar programa1.py como artefacto
