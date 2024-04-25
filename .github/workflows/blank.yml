@@ -23,12 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout del repositorio
+      - uses: actions/checkout@v2
       
       - name: Instalar Python
         uses: actions/setup-python@v2
         with:
-        python-version: '3.x'  # Especifica la versión de Python que deseas usar
+          python-version: '3.x'  
 
       - name: Ejecutar script Python
         run: python test_unitario.py  # test de programa1.py
