@@ -1,6 +1,6 @@
 # Configuracion en YAML para el Pipeline CI/CD
 
-name: Integracion Continua / Despliegue Continuo
+name: Integracion Continua / Entrega Continua
 
 # Tres opciones de DESPARADORES
 on:
